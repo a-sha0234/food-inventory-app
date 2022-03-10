@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/a-sha0234/food-inventory-app/issues"
   },
-  "homepage": "https://github.com/a-sha0234/food-inventory-app#readme"
+  "homepage": "https://github.com/a-sha0234/food-inventory-app#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
 }
