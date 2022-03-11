@@ -3,7 +3,15 @@
   <%-include("./partials/head.ejs")%>
   <body>
     <%-include("./partials/navbar.ejs")%>
-    <main></main>
+    <div class="heading">
+      <h1>Welcome to Food Festive</h1>
+      <p>Find your festive, snacks, drinks and much more!</p>
+    </div>
+    <main class="index-content">
+      <a href="/items" id="items-button">Shop by Items</a>
+
+      <a href="/categories" id="category-button">Shop by Categories</a>
+    </main>
     <!--  -->
     <%-include("./partials/footer.ejs")%>
   </body>
