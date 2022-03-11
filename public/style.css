@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /* css reset */
+
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 li,
@@ -16,6 +20,8 @@ a {
 .navbar {
   display: flex;
   flex-direction: row;
+  background-color: gainsboro;
+  padding: 10px;
 }
 
 #homeLink {
@@ -29,3 +35,63 @@ a {
   margin-left: 330px;
 }
 /* end of navbar css */
+
+/* index page styligng */
+
+.index-content {
+  margin-top: 30%;
+  display: flex;
+  justify-content: center;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 200px;
+  font-size: 2.3rem;
+}
+
+#items-button {
+  padding: 20px;
+  font-size: 1.3rem;
+  background-color: #008cba;
+  color: white;
+  font-weight: bold;
+  box-shadow: 5px;
+  border: 1px solid darkblue;
+  margin-right: 20px;
+}
+
+#items-button:hover {
+  background-color: beige;
+  color: black;
+}
+
+#category-button {
+  padding: 20px;
+  font-size: 1.3rem;
+  background-color: #008cba;
+  color: white;
+  font-weight: bold;
+  box-shadow: 10px;
+  border: 1px solid darkblue;
+}
+
+#category-button:hover {
+  background-color: beige;
+  color: black;
+}
+
+/* End of index page styligng */
+
+/* start of styling of footer  */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  background-color: gainsboro;
+  width: 100%;
+  text-align: center;
+}
+/* End of  footer  */
