@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%-include("./partials/head.ejs")%>
+  </head>
+  <body>
+    <%-include("./partials/navbar.ejs")%>
+    <h1>Create an food item</h1>
+    <form action="/items" method="POST">
+      <label>name of food</label>
+      <input name="name" required />
+      <!--  -->
+      <select name="Category">
+        <option value="snack">Snack</option>
+        <option value="drink">Drink</option>
+      </select>
+
+      <!--  -->
+      <label>image url</label>
+      <input name="imageUrl" required />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
