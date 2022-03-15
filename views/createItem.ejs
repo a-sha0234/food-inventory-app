@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%-include("./partials/head.ejs")%>
-  </head>
+  <%-include("./partials/head.ejs")%>
+
   <body>
     <%-include("./partials/navbar.ejs")%>
     <h1>Create an food item</h1>
     <form action="/items" method="POST">
+      <!--  -->
       <label>name of food</label>
-      <input name="name" required />
+      <input name="name" required type="text" />
       <!--  -->
       <select name="Category">
         <option value="snack">Snack</option>
@@ -17,7 +17,18 @@
 
       <!--  -->
       <label>image url</label>
-      <input name="imageUrl" required />
+      <input name="imageUrl" required type="text" />
+      <!--  -->
+      <label>Description of item </label>
+      <textarea name="foodDescription" rows="4" cols="50" required> </textarea>
+
+      <!--  -->
+      <label>Price </label>
+      <input name="price" required type="number" />
+      <!--  -->
+      <label>Amount in stock</label>
+      <input name="stock" required type="number" />
+
       <button>Submit</button>
     </form>
   </body>
