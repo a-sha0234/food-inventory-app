@@ -7,14 +7,15 @@
     <h1>Festive food items</h1>
     <main>
       <% if(food.length > 0 ) { %> <% food.forEach(item => { %>
-      <h1><%=item.name%></h1>
+      <a href="/items/<%=item._id%>">
+        <h1><%=item.name%></h1>
 
-      <img
-        src="<%=item.imageUrl%>"
-        alt="<%=item.name%>"
-        height="200px"
-        width="200px"
-      />
+        <img
+          src="<%=item.imageUrl%>"
+          alt="<%=item.name%>"
+          height="200px"
+          width="200px"
+      /></a>
 
       <%}); } else { %>
 
