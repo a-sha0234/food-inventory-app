@@ -8,27 +8,30 @@
     <main>
       <h2>Snacks</h2>
       <%categories.forEach(item => { %> <% if(item.Category == "snack" ){ %>
-      <h1><%=item.name%></h1>
 
-      <img
-        src="<%=item.imageUrl%>"
-        alt="<%=item.name%>"
-        height="200px"
-        width="200px"
-      />
+      <a href="/categories/<%=item._id %>">
+        <h1><%=item.name%></h1>
+
+        <img
+          src="<%=item.imageUrl%>"
+          alt="<%=item.name%>"
+          height="200px"
+          width="200px"
+      /></a>
 
       <%}});%>
 
       <h2>Drinks</h2>
       <%categories.forEach(item => { %> <% if(item.Category == "drink" ){ %>
-      <h1><%=item.name%></h1>
+      <a href="/categories/<%=item._id %>">
+        <h1><%=item.name%></h1>
 
-      <img
-        src="<%=item.imageUrl%>"
-        alt="<%=item.name%>"
-        height="200px"
-        width="200px"
-      />
+        <img
+          src="<%=item.imageUrl%>"
+          alt="<%=item.name%>"
+          height="200px"
+          width="200px"
+      /></a>
 
       <%}});%>
     </main>
