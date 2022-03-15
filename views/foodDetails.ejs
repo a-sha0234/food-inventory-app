@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("./partials/head.ejs")%>
+  <body>
+    <%-include("./partials/navbar.ejs")%>
+
+    <main>
+      <h1><%=foodDetails.name%></h1>
+
+      <img
+        src="<%=foodDetails.imageUrl%>"
+        alt="<%=foodDetails.name%>"
+        height="200px"
+        width="200px"
+      />
+      <p><%=foodDetails.Category%></p>
+      <p><%=foodDetails.foodDescription%></p>
+      <p><%=foodDetails.price%></p>
+      <p><%=foodDetails.stock%></p>
+    </main>
+  </body>
+</html>
+<!-- why didnt i have to loop through it  -->
