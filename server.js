@@ -1,7 +1,7 @@
 const express = require("express");
 const { default: mongoose } = require("mongoose");
 const monoogse = require("mongoose");
-const food = require("./models/foodItem");
+
 const fooditem = require("./models/foodItem");
 const app = express();
 
@@ -22,11 +22,26 @@ app.get("/", (req, res) => {
 });
 
 app.get("/items", (req, res) => {
-  res.render("items", { title: "items" });
+  fooditem
+    .find()
+    .sort({ createAt: -1 })
+    .then((result) => {
+      res.render("items", { title: "items", food: result });
+    });
 });
 
 app.get("/categories", (req, res) => {
-  res.render("items", { title: "categories" });
+  // const query1 = { Category: /drink/ }; //regex
+  // const query2 = { Category: /snack/ };
+  // fooditem.find(query1).then((result) => {
+  //   res.render("categories", { title: "categories", Category: result });
+  // });
+  fooditem
+    .find()
+
+    .then((result) => {
+      res.render("categories", { title: "categories", categories: result });
+    });
 });
 
 app.get("/create", (req, res) => {
