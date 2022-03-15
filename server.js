@@ -1,6 +1,7 @@
 const express = require("express");
 const { default: mongoose } = require("mongoose");
 const monoogse = require("mongoose");
+const food = require("./models/foodItem");
 
 const fooditem = require("./models/foodItem");
 const app = express();
@@ -31,11 +32,6 @@ app.get("/items", (req, res) => {
 });
 
 app.get("/categories", (req, res) => {
-  // const query1 = { Category: /drink/ }; //regex
-  // const query2 = { Category: /snack/ };
-  // fooditem.find(query1).then((result) => {
-  //   res.render("categories", { title: "categories", Category: result });
-  // });
   fooditem
     .find()
 
@@ -63,6 +59,26 @@ app.post("/items", (req, res) => {
     .catch((err) => {
       console.log(err);
     });
+});
+
+//===========================================
+//url params
+//===========================================
+
+app.get("/items/:id", (req, res) => {
+  const id = req.params.id; // get the id of the url, this also lets us find this unique id in the database
+  // so we can retrive the correct item that was clicked on
+  fooditem.findById(id).then((result) => {
+    res.render("foodDetails", { title: "details", foodDetails: result });
+  });
+});
+
+app.get("/categories/:id", (req, res) => {
+  const id = req.params.id; // get the id of the url, this also lets us find this unique id in the database
+  // so we can retrive the correct item that was clicked on
+  fooditem.findById(id).then((result) => {
+    res.render("foodDetails", { title: "details", foodDetails: result });
+  });
 });
 
 //===========================================
