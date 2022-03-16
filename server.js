@@ -11,13 +11,13 @@ const app = express();
 //================================================
 // handle database connection and listen for port
 //================================================
-
+const port = process.env.PORT || 3000;
 const dbUri =
   "mongodb+srv://a1:test@food-inventory.u0y0n.mongodb.net/foodInventory?retryWrites=true&w=majority";
 
 mongoose
   .connect(dbUri, { useNewUrlParser: true })
-  .then((result) => app.listen(3000))
+  .then((result) => app.listen(port))
   .catch((err) => console.log(err));
 
 //================================================
