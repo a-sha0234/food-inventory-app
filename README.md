@@ -35,7 +35,9 @@ This is a server side web application which is used to shop for festive drinks o
 ## Screenshots <a name="screenshot"></a>
 
 <img src="./public/homepage.png" width="128"/>
-
+<img src="./public/items.png" width="128"/>
+<img src="./public/categorypage.png" width="128"/>
+<img src="./public/form.png" width="128"/>
 ## Setup <a name="setup-paragraph"></a>
 
 Project Dependancies are listed in the package.json file: package.json
