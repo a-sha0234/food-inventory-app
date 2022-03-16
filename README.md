@@ -33,6 +33,8 @@ This is a server side web application which is used to shop for festive drinks o
 
 ## Screenshots <a name="screenshot"></a>
 
+<img src="relative/path/in/repository/to/image.svg" width="128"/>
+
 ## Setup <a name="setup-paragraph"></a>
 Project Dependancies are listed in the package.json file: package.json
 
@@ -52,7 +54,7 @@ Then to start the application:
 ```
 npm start 
 ```
-or if using nodemon run 
+or if using nodemon run: 
 
 ```
 nodemon server
@@ -74,4 +76,4 @@ Room for improvement:
 This project was inspired by the odin project 
 
 ## Contact <a name="Contact-paragraph"></a>
-Created by Arun Shaema, feel free to contact me 
+Created by Arun Sharma, feel free to contact me 
