@@ -3,35 +3,40 @@
   <%-include("./partials/head.ejs")%>
   <body>
     <%-include("./partials/navbar.ejs")%>
-    <h1>Categories</h1>
+    <h1 style="text-align: center; margin: 20px">Categories</h1>
 
     <main>
-      <h2>Snacks</h2>
+      <h2 style="text-align: center">Snacks</h2>
+
       <%categories.forEach(item => { %> <% if(item.Category == "snack" ){ %>
 
-      <a href="/categories/<%=item._id %>">
-        <h1><%=item.name%></h1>
+      <div class="db_items">
+        <a href="/categories/<%=item._id %>">
+          <h1><%=item.name%></h1>
 
-        <img
-          src="<%=item.imageUrl%>"
-          alt="<%=item.name%>"
-          height="200px"
-          width="200px"
-      /></a>
+          <img
+            src="<%=item.imageUrl%>"
+            alt="<%=item.name%>"
+            height="200px"
+            width="200px"
+        /></a>
+      </div>
 
       <%}});%>
 
-      <h2>Drinks</h2>
+      <h2 style="text-align: center">Drinks</h2>
       <%categories.forEach(item => { %> <% if(item.Category == "drink" ){ %>
-      <a href="/categories/<%=item._id %>">
-        <h1><%=item.name%></h1>
+      <div class="db_items">
+        <a href="/categories/<%=item._id %>">
+          <h1><%=item.name%></h1>
 
-        <img
-          src="<%=item.imageUrl%>"
-          alt="<%=item.name%>"
-          height="200px"
-          width="200px"
-      /></a>
+          <img
+            src="<%=item.imageUrl%>"
+            alt="<%=item.name%>"
+            height="200px"
+            width="200px"
+        /></a>
+      </div>
 
       <%}});%>
     </main>
