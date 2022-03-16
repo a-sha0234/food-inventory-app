@@ -1,7 +1,13 @@
+//imports
+
 const express = require("express");
 const fooditem = require("../models/foodItem");
 const itemController = require("../controllers/itemController");
 const router = express.Router();
+
+//===============================================
+// handle routes, export
+//===============================================
 
 router.get("/items", itemController.item_itemsPage);
 

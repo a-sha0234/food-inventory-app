@@ -1,4 +1,9 @@
+//imports
 const fooditem = require("../models/foodItem");
+
+//===============================================
+// routing functions for category
+//===============================================
 
 const get_categories = (req, res) => {
   fooditem
@@ -17,4 +22,5 @@ const get_categoryId = (req, res) => {
   });
 };
 
+//export functions to call in the routes
 module.exports = { get_categories, get_categoryId };

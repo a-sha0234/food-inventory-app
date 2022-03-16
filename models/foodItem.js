@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+//===============================================
+// create schema, export it
+//===============================================
+
 const foodSchema = new Schema({
   name: { type: String, required: true },
   Category: { type: String, required: true },

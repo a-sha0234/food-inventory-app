@@ -1,3 +1,4 @@
+//imports
 const express = require("express");
 const { default: mongoose } = require("mongoose");
 const monoogse = require("mongoose");
@@ -7,6 +8,10 @@ const categoryRouter = require("./routes/categoryRoutes");
 const fooditem = require("./models/foodItem");
 const app = express();
 
+//================================================
+// handle database connection and listen for port
+//================================================
+
 const dbUri =
   "mongodb+srv://a1:test@food-inventory.u0y0n.mongodb.net/foodInventory?retryWrites=true&w=majority";
 
@@ -15,9 +20,17 @@ mongoose
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
 
-app.set("view engine", "ejs");
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
+//================================================
+//
+//================================================
+
+app.set("view engine", "ejs"); //set views type
+app.use(express.static("public")); //make folder public
+app.use(express.urlencoded({ extended: true })); //allows for form data to work
+
+//================================================
+// routes- for index and create views
+//================================================
 
 app.get("/", (req, res) => {
   res.render("index", { title: "home" });
@@ -30,9 +43,9 @@ app.get("/create", (req, res) => {
 app.use(itemRouters);
 app.use(categoryRouter);
 
-//===========================================
-//404 page
-//===========================================
+//===============================================
+// handle 404 page
+//===============================================
 
 app.use((req, res) => {
   res.status(404).render("404", { title: "404" });

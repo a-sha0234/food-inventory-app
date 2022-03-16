@@ -1,4 +1,10 @@
+//imports
 const fooditem = require("../models/foodItem");
+
+//===============================================
+// routing functions for items
+//===============================================
+
 const item_itemsPage = (req, res) => {
   fooditem
     .find()
@@ -29,4 +35,5 @@ const item_get_id = (req, res) => {
   });
 };
 
+//export functions to call in the routes
 module.exports = { item_itemsPage, item_post, item_get_id };
