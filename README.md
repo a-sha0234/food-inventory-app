@@ -1,5 +1,7 @@
 # food-inventory-app
 
+Live preview of website: http://food-inventory-application.herokuapp.com/
+
 # Table of contents
 
 1. [Introduction](#introduction)
@@ -7,11 +9,10 @@
 3. [Features](#features-paragraph)
 4. [Screenshots](#screenshot)
 5. [Setup](#setup-paragraph)
-6. [Usage](#usage-paragraph)
-7. [Project Status](#status-paragraph)
-8. [Room for improvements](#imporvements-paragraph)
-9. [Acknowledgements](#Acknowledgements-paragraph)
-10. [Contact](#contact-paragraph)
+6. [Project Status](#status-paragraph)
+7. [Room for improvements](#imporvements-paragraph)
+8. [Acknowledgements](#Acknowledgements-paragraph)
+9. [Contact](#contact-paragraph)
 
 ## Introduction <a name="introduction"></a>
 
@@ -25,12 +26,13 @@ This is a server side web application which is used to shop for festive drinks o
 4. EJS
 5. Git version control
 6. Github
+7. Nodemon
 
 ## Features <a name="features-paragraph"></a>
 
 1. Muliple pages, page to shop by item, other to shop by category
-2. form to allow users to enter their own items
-3. abiility to view more details about a product by clicking on item
+2. Form to allow users to enter their own items, this then gets displayed on both item and category pages
+3. Ability to view more details about a product by clicking on item
 
 ## Screenshots <a name="screenshot"></a>
 
@@ -42,10 +44,10 @@ This is a server side web application which is used to shop for festive drinks o
 
 Project Dependancies are listed in the package.json file: package.json
 
-First clong the repo
+First clone the repo
 
 ```
-git clone <url>
+git clone https://github.com/a-sha0234/food-inventory-app.git
 ```
 
 Run the following command in the command line:
@@ -65,10 +67,6 @@ or if using nodemon run:
 ```
 nodemon server
 ```
-
-## Usage <a name="usage-paragraph"></a>
-
-The first paragraph text
 
 ## Status <a name="status-paragraph"></a>
 
