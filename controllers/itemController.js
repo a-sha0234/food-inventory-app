@@ -21,7 +21,7 @@ const item_post = (req, res) => {
     });
 };
 
-const item_get_id = () => {
+const item_get_id = (req, res) => {
   const id = req.params.id; // get the id of the url, this also lets us find this unique id in the database
   // so we can retrive the correct item that was clicked on
   fooditem.findById(id).then((result) => {
