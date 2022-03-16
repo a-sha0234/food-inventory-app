@@ -1,7 +1,7 @@
 # food-inventory-app
 
-
 # Table of contents
+
 1. [Introduction](#introduction)
 2. [Technologies Used](#paragraph1)
 3. [Features](#features-paragraph)
@@ -13,29 +13,31 @@
 9. [Acknowledgements](#Acknowledgements-paragraph)
 10. [Contact](#contact-paragraph)
 
-
-
 ## Introduction <a name="introduction"></a>
-This is a server side web application which is used to shop for festive drinks or snacks 
+
+This is a server side web application which is used to shop for festive drinks or snacks
 
 ## Technologies Used <a name="paragraph1"></a>
-1) Nodejs
-2) Expressjs
-3) mongoDb
-5) EJS
-6) Git version control
-7) Github
+
+1. Nodejs
+2. Expressjs
+3. mongoDb
+4. EJS
+5. Git version control
+6. Github
 
 ## Features <a name="features-paragraph"></a>
-1) Muliple pages, page to shop by item, other to shop by category
-2) form to allow users to enter their own items 
-3) abiility to view more details about a product by clicking on item 
+
+1. Muliple pages, page to shop by item, other to shop by category
+2. form to allow users to enter their own items
+3. abiility to view more details about a product by clicking on item
 
 ## Screenshots <a name="screenshot"></a>
 
-<img src="relative/path/in/repository/to/image.svg" width="128"/>
+<img src="./public/homepage.png" width="128"/>
 
 ## Setup <a name="setup-paragraph"></a>
+
 Project Dependancies are listed in the package.json file: package.json
 
 First clong the repo
@@ -44,36 +46,42 @@ First clong the repo
 git clone <url>
 ```
 
-Run the following command in the command line: 
+Run the following command in the command line:
 
 ```
 npm install
 ```
+
 Then to start the application:
 
 ```
-npm start 
+npm start
 ```
-or if using nodemon run: 
+
+or if using nodemon run:
 
 ```
 nodemon server
 ```
 
 ## Usage <a name="usage-paragraph"></a>
+
 The first paragraph text
 
 ## Status <a name="status-paragraph"></a>
-Finsihed, as all features has been implemented 
+
+Finsihed, as all features has been implemented
 
 ## Room for improvements <a name="imporvements-paragraph"></a>
 
 Room for improvement:
-1) Design of the item and categroy display
 
+1. Design of the item and categroy display
 
 ## Acknowledgements <a name="Acknowledgements-paragraph"></a>
-This project was inspired by the odin project 
+
+This project was inspired by the odin project
 
 ## Contact <a name="Contact-paragraph"></a>
-Created by Arun Sharma, feel free to contact me 
+
+Created by Arun Sharma, feel free to contact me
