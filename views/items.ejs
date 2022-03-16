@@ -3,19 +3,23 @@
   <%-include("./partials/head.ejs")%>
   <body>
     <%-include("./partials/navbar.ejs")%> <%-include("./partials/footer.ejs")%>
-    <a href="/create">Create your item!</a>
-    <h1>Festive food items</h1>
-    <main>
-      <% if(food.length > 0 ) { %> <% food.forEach(item => { %>
-      <a href="/items/<%=item._id%>">
-        <h1><%=item.name%></h1>
 
-        <img
-          src="<%=item.imageUrl%>"
-          alt="<%=item.name%>"
-          height="200px"
-          width="200px"
-      /></a>
+    <main>
+      <a href="/create" class="create_link">Create your item!</a>
+      <h1 id="items_title">Festive food items</h1>
+
+      <% if(food.length > 0 ) { %> <% food.forEach(item => { %>
+      <div class="db_items">
+        <a href="/items/<%=item._id%>">
+          <h1 class="items_title"><%=item.name%></h1>
+
+          <img
+            src="<%=item.imageUrl%>"
+            alt="<%=item.name%>"
+            height="200px"
+            width="200px"
+        /></a>
+      </div>
 
       <%}); } else { %>
 
