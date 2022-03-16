@@ -1,1 +1,1 @@
-web: node server.jj
+web:node server.jj
