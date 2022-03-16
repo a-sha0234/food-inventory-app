@@ -5,18 +5,19 @@
     <%-include("./partials/navbar.ejs")%>
 
     <main>
-      <h1><%=foodDetails.name%></h1>
+      <h1 class="detailsTitle"><%=foodDetails.name%></h1>
 
       <img
         src="<%=foodDetails.imageUrl%>"
         alt="<%=foodDetails.name%>"
-        height="200px"
-        width="200px"
+        height="300px"
+        width="300px"
+        id="details_img"
       />
-      <p><%=foodDetails.Category%></p>
-      <p><%=foodDetails.foodDescription%></p>
-      <p><%=foodDetails.price%></p>
-      <p><%=foodDetails.stock%></p>
+      <p class="details_text">Category: <%=foodDetails.Category%></p>
+      <p class="details_text">Description: <%=foodDetails.foodDescription%></p>
+      <p class="details_text">Price: <%=foodDetails.price%></p>
+      <p class="details_text">In stock: <%=foodDetails.stock%></p>
     </main>
     <%-include("./partials/footer.ejs")%>
   </body>
